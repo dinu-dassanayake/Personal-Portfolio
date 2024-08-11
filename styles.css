@@ -1,0 +1,100 @@
+:root {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    background-color: rgb(58, 58, 58);
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(119,151,143);
+}
+
+main {
+    color: white;
+    margin-left: 7rem;
+    padding: 1rem;
+}
+
+.navbar {
+    position: fixed;
+    width: 5rem;
+    height: 100vh;
+    background-color: rgb(162, 162, 162);
+    transition: width 300ms ease;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-item {
+    width: 100%;
+    height: 96px;
+}
+
+.logo {
+    margin-top: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: 0.1ch;
+    width: 100%;
+}
+
+.nav-item:first-child{
+    margin-top: auto;
+}
+
+.nav-item:last-child {
+    margin-top: auto;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: rgb(0, 0, 0);
+    filter: grayscale(100%) opacity(0.7) blur(1);
+    transition: 200ms;
+}
+
+.nav-link:hover {
+    filter: grayscale(0%) opacity(1);
+    background-color: rgb(73, 93, 86);
+}
+
+.link-text {
+    display: none;
+    margin-left: 1rem;
+}
+
+.nav-link svg {
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+.navbar:hover {
+    width: 16rem;
+}
+
+.navbar:hover .link-text {
+    display: block;
+}
+
+
